@@ -27,7 +27,12 @@ const Post = () => {
   useEffect(() => {
     getData();
   }, []);
-
+  const handleUpdate = () => {
+    // code to handle update goes here
+  };
+  const handleDelete = () => {
+    // code to handle update goes here
+  };
   return (
     <>
       {data.map((eachdata) => {
@@ -186,6 +191,59 @@ const Post = () => {
                 }}
                 src="https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYW"
               ></img>
+            </div>
+            <div
+              style={{
+                display: "flex-end",
+                flexDirection: "row",
+                margin: "5px 5px 5px 5px",
+              }}
+            >
+              {" "}
+              <div>
+                {" "}
+                <button
+                  style={{
+                    backgroundColor: "#C9835B",
+                    border: "none",
+                    color: "white",
+                    padding: "8px 20px",
+                    boxShadow: "0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
+
+                    borderRadius: "12px",
+                    textAlign: "center",
+                    fontSize: "16px",
+                    marginRight: "8px",
+                    // display: "flex",
+                    // flexDirection: "row",
+                  }}
+                  onClick={handleDelete}
+                >
+                  delete
+                </button>
+              </div>
+              <div>
+                {" "}
+                <button
+                  style={{
+                    backgroundColor: "#C9835B",
+                    border: "none",
+                    color: "white",
+                    padding: "8px 20px",
+                    marginRight: "2px",
+                    boxShadow: "0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
+
+                    borderRadius: "12px",
+                    textAlign: "center",
+                    fontSize: "16px",
+                    // display: "flex",
+                    // flexDirection: "row",
+                  }}
+                  onClick={handleUpdate}
+                >
+                  Update
+                </button>
+              </div>
             </div>
           </>
         );
