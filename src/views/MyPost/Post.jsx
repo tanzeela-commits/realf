@@ -134,8 +134,8 @@ const Post = () => {
             <div
               style={{
                 padding: "2px",
-                border: "0.5px solid",
-                width: "100%",
+                border: "0.5px ",
+                width: "25%",
                 boxShadow: "0 9px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)",
               }}
             ></div>
